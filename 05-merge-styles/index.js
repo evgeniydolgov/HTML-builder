@@ -9,7 +9,7 @@ fs.readdir(path.join(__dirname, './styles'),(err,data) => {
             fs.readFile(path.join(__dirname, './styles',elem), (err,data) => {
                 fs.appendFile(path.join(__dirname, './project-dist/bundle.css'), data, () => {} )
             })
-        };
+        }
     })
 })
 
